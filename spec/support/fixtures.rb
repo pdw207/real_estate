@@ -9,4 +9,10 @@ FactoryGirl.define do
     description '4 Family Duplex'
   end
 
+  factory :owner do
+    first_name "Bob"
+    last_name "Smith"
+    email "bsmith@consulting.com"
+  end
+
 end
