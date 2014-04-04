@@ -10,13 +10,14 @@ gem 'pg'
 
 
 gem 'foundation-rails'
-gem 'simple_form’
+gem 'simple_form'
 
 group :development, :test do
     gem 'rspec-rails'
     gem 'pry-rails'
     gem 'quiet_assets'
     gem 'factory_girl_rails'
+    gem 'valid_attribute'
 end
 
 group :test do
