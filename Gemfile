@@ -10,7 +10,7 @@ gem 'pg'
 
 
 gem 'foundation-rails'
-gem 'simple_form’
+gem 'simple_form'
 
 group :development, :test do
     gem 'rspec-rails'

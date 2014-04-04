@@ -9,4 +9,4 @@
 
 # Make sure your secret_key_base is kept private
 # if you're sharing your code publicly.
-RealEstate::Application.config.secret_key_base = '85b5dbf999da02fac59e90fa77d67ea19e5130ad0de96aad2e45416845da70b075f196b84d37f88301a0130ca4995d71676212dc4195e7e6642da01041c1887b'
+RealEstate::Application.config.secret_key_base = ENV['SECRET_TOKEN']
