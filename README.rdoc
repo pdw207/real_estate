@@ -18,7 +18,7 @@ Acceptance Criteria:
 * Only US states can be specified
 * I can optionally specify a description of the building
 * If I enter all of the required information in the required format, the building is recorded.
-If I do not specify all of the required information in the required formats, the bui*lding is not recorded and I am presented with errors
+* If I do not specify all of the required information in the required formats, the bui*lding is not recorded and I am presented with errors
 * Upon successfully creating a building, I am redirected so that I can record another building.
 
 ###Story 2
