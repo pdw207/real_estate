@@ -1,0 +1,11 @@
+<h1>Create an Owner </h1>
+
+<%= simple_form_for @owner do |o| %>
+<%= o.input :first_name, label: 'First Name' %>
+<%= o.input :last_name, label: 'Last Name' %>
+<%= o.input :email %>
+<%= o.input :company %>
+<%= o.button :submit, 'Create an Owner' %>
+<% end %>
+
+<p><%= link_to 'Back to Home', root_path %></p>
