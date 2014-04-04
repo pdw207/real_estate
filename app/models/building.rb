@@ -9,5 +9,6 @@ class Building < ActiveRecord::Base
   validates :state, presence: true, inclusion: {in: STATES}
   validates :zip_code, presence: true
 
+  belongs_to :owner
 end
 

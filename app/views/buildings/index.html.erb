@@ -5,6 +5,7 @@
     <th>City</th>
     <th>State</th>
     <th>Postal Code</th>
+    <th>Owner</th>
     <th>Description</th>
   </tr>
 
@@ -14,8 +15,11 @@
     <td><%= building.city %></td>
     <td><%= building.state %></td>
     <td><%= building.zip_code %></td>
+    <td><%= building.owner.full_name if building.owner %></td>
     <td><%= building.description %></td>
   </tr>
   <% end %>
 
 </table>
+
+<%= link_to 'Back to Home', root_path %>
