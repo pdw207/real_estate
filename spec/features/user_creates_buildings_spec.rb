@@ -47,4 +47,12 @@ feature 'user creates building', %w{
     expect(Building.count).to eq(beg_building_count)
   end
 
+  scenario 'user wants to view all buildings' do
+    FactoryGirl.create_list(:building, 10, street: "918 Oak Street")
+    building_count = Building.count
+    visit root_path
+    click_link 'View All Buildings'
+    expect(page).to have_content("918 Oak Street")
+
+  end
 end

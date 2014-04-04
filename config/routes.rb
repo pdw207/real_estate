@@ -1,6 +1,6 @@
 RealEstate::Application.routes.draw do
 
-  resources :buildings, only: [:new, :create]
+  resources :buildings, only: [:new, :create, :index]
   resources :owners, only: [:new, :create, :index]
   root 'home#index'
 

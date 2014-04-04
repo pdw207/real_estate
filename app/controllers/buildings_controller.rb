@@ -1,11 +1,16 @@
 class BuildingsController < ApplicationController
 
+  def index
+    @buildings = Building.all
+  end
+
   def new
     @building = Building.new
   end
 
   def create
     @building = Building.new(building_params)
+
     if @building.save
       redirect_to root_path, notice: 'You have Successfully Added a Building'
     else

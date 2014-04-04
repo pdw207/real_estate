@@ -1,0 +1,21 @@
+<h1>Property List</h1>
+<table>
+  <tr>
+    <th>Street</th>
+    <th>City</th>
+    <th>State</th>
+    <th>Postal Code</th>
+    <th>Description</th>
+  </tr>
+
+  <% @buildings.each do |building| %>
+  <tr>
+    <td><%= building.street %></td>
+    <td><%= building.city %></td>
+    <td><%= building.state %></td>
+    <td><%= building.zip_code %></td>
+    <td><%= building.description %></td>
+  </tr>
+  <% end %>
+
+</table>

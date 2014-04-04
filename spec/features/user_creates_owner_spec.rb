@@ -49,7 +49,6 @@ So that I can keep track of our relationships with owners
     owner_count = Owner.count
     visit root_path
     click_link 'View All Owners'
-    save_and_open_page
     expect(page).to have_content('Bob')
 
   end
