@@ -18,4 +18,9 @@ describe Building do
     it {should_not have_valid(:zip_code).when(*blank)}
   end
 
+  context 'associations' do
+    it {should belong_to(:owner)}
+  end
+
+
 end

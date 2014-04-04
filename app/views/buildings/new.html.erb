@@ -6,6 +6,7 @@
 <%= b.input :state %>
 <%= b.input :zip_code, label: 'Postal Code' %>
 <%= b.input :description %>
+<%= b.association :owner, label_method: :full_name%>
 <%= b.button :submit, 'Create Building' %>
 <% end %>
 

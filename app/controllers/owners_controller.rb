@@ -18,6 +18,18 @@ class OwnersController < ApplicationController
     end
   end
 
+  def destroy
+    @owner = Owner.find(params[:id])
+
+
+    @owner.delete_buildings if @owner.buildings.count > 0
+
+
+    @owner.delete
+    redirect_to owners_path
+  end
+
+
   private
 
   def owner_params
@@ -25,5 +37,6 @@ class OwnersController < ApplicationController
       :first_name, :last_name, :email, :company
       )
   end
+
 
 end

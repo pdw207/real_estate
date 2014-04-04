@@ -7,6 +7,7 @@ FactoryGirl.define do
     state 'NY'
     zip_code '11201'
     description '4 Family Duplex'
+    owner
   end
 
   factory :owner do

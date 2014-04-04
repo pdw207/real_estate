@@ -2,6 +2,7 @@ class BuildingsController < ApplicationController
 
   def index
     @buildings = Building.all
+
   end
 
   def new
@@ -10,7 +11,6 @@ class BuildingsController < ApplicationController
 
   def create
     @building = Building.new(building_params)
-
     if @building.save
       redirect_to root_path, notice: 'You have Successfully Added a Building'
     else
@@ -23,7 +23,7 @@ class BuildingsController < ApplicationController
 
   def building_params
     params.require(:building).permit(
-      :state, :address, :street, :city, :description, :zip_code
+      :state, :address, :street, :city, :description, :zip_code, :owner_id
       )
   end
 
